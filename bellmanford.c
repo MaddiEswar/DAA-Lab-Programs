@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define INF 9999
+#define INF 999
 
 struct edge
 {
@@ -82,8 +82,6 @@ void display(int arr[],int size)
 {
     int i;
     for(i=0;i<size;i++)
-    {
         printf("\n%d",arr[i]);
-    }
     printf("\n");
 }
