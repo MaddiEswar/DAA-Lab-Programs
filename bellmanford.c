@@ -1,3 +1,4 @@
+//Write a program for Single Source Shortest Path for General Weights using Dynamic Programming
 #include<stdio.h>
 #include<stdlib.h>
 #define INF 999
@@ -26,7 +27,7 @@ int main(void)
     g->vertices=v;
     g->edges=e;
     g->edge=(struct edge *)malloc(g->edges*sizeof(struct edge));
-    printf("\n Enter edge u,v and weight");
+    printf("\n Enter edge u,v and weight\n");
     for(i=0;i<e;i++){
         scanf("%d%d%d",&g->edge[i].u,&g->edge[i].v,&g->edge[i].w);
 
@@ -82,6 +83,6 @@ void display(int arr[],int size)
 {
     int i;
     for(i=0;i<size;i++)
-        printf("\n%d",arr[i]);
+        printf("\t%d",arr[i]);
     printf("\n");
 }

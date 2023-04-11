@@ -26,13 +26,11 @@ int optimal_merge(int arr[], int n)
                 min2_idx = i;
             }
         }
-
         cost += min1 + min2;
         arr[min1_idx] = min1 + min2;
         arr[min2_idx] = arr[n - 1];
         n--;
     }
-
     return cost;
 }
 
